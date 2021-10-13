@@ -10,5 +10,12 @@ rebel_module_groups: []
 repo_description: opnsynid-vertical-accountant-aeroo-report
 repo_name: opnsynid-vertical-accountant-aeroo-report
 repo_slug: opnsynid-vertical-accountant-aeroo-report
-travis_apt_packages: []
+travis_apt_packages:
+  - python-lxml
+  - python-simplejson
+  - python-serial
+  - python-yaml
+  - python-cairo
+  - cups
+  - libcups2-dev
 travis_apt_sources: []
