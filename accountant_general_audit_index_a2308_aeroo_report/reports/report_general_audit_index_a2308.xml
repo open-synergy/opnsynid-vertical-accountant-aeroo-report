@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<!-- Copyright 2021 OpenSynergy Indonesia
+     Copyright 2021 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). -->
+<openerp>
+<data noupdate="1">
+    <!-- Aeroo Report -->
+    <!-- General Audit A2308 XLS -->
+    <record id="report_general_audit_index_a2308_xls" model="ir.actions.report.xml">
+        <field name="name">General Audit Index A.230.8 XLS</field>
+        <field name="type">ir.actions.report.xml</field>
+        <field name="model">accountant.general_audit_index_a2308</field>
+        <field name="report_name">report_general_audit_index_a2308_xls</field>
+        <field name="report_type">aeroo</field>
+        <field name="in_format">oo-ods</field>
+        <field name="out_format" ref="report_aeroo.report_mimetypes_xls_odt" />
+        <field
+                name="parser_loc"
+            >accountant_general_audit_index_a2308_aeroo_report/reports/parser_index_a2308.py</field>
+        <field
+                name="report_rml"
+            >accountant_general_audit_index_a2308_aeroo_report/reports/general_audit_index_a2308_xls.ods</field>
+        <field name="parser_state">loc</field>
+        <field name="tml_source">file</field>
+    </record>
+
+    <!-- Print Policy -->
+    <!-- General Audit 230.8XLS -->
+    <record id="print_policy_general_audit_index_a2308_xls" model="base.print.policy">
+        <field name="name">General Audit Index A.230.8 XLS</field>
+        <field name="report_action_id" ref="report_general_audit_index_a2308_xls" />
+        <field name="active">True</field>
+        <field name="python_condition">result = True</field>
+    </record>
+
+</data>
+</openerp>
