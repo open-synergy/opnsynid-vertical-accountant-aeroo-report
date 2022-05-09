@@ -6,7 +6,8 @@ generate_requirements_txt: false
 include_aeroo_report: true
 include_wkhtmltopdf: true
 odoo_version: 8.0
-rebel_module_groups: []
+rebel_module_groups:
+  - accountant_general_audit_index_a1102_aeroo_report
 repo_description: opnsynid-vertical-accountant-aeroo-report
 repo_name: opnsynid-vertical-accountant-aeroo-report
 repo_slug: opnsynid-vertical-accountant-aeroo-report
